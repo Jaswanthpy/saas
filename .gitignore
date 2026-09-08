@@ -20,8 +20,24 @@
 # production
 /build
 
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# editors
+.vscode/
+.idea/
+*.swp
+
 # misc
 .DS_Store
+Thumbs.db
 *.pem
 
 # debug
@@ -32,6 +48,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel
